@@ -19,7 +19,7 @@ class ApiLoginController extends AbstractController
             ], Response::HTTP_UNAUTHORIZED);
         }
         
-        $token = ...; // somehow create an API token for $user
+        $token = "";
         
         return $this->json([
             'user'  => $user->getUserIdentifier(),
